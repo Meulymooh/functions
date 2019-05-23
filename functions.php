@@ -46,9 +46,9 @@
 		<?php
 
 			function nickname_generate() {
-				if (isset($_POST["name"])) {
+				if (isset($_POST["nickname"])) {
   						$str = $_POST["name"];
-  						
+  						echo '<b>Function "nickname_generate"</b>:<br/>';
   						// Reverse name	
   						echo "<li>" . strrev("$str") . "</li>";
   						// Capitalize name
@@ -77,11 +77,28 @@
     						$i++;
 						}
 						echo "<li>" . $str . "</li>";
+						echo '<br/><br/>';
   					}
 			}
 
-			nickname_generate();
+			function object_generate(){
+				if (isset($_POST["info"])) {
+					$str2 = new stdClass();
+						$str2->firsName = '<b>First name:</b> Emilie';
+						$str2->lastName = '<b>Last name:</b> Mesureur';
+						$str2->nickname = '<b>Nickname:</b> Milou';
+						$str2->age = "<b>Age:</b> 39";
+						$str2->location = '<b>Location:</b> Ghent, Belgium';
+						$str2->occupation = '<b>Occupation:</b> Junior web developer in the making';
+						echo '<b>Function "object_generate"</b>:<br/>';
+						foreach ($str2 as $info) {
+							echo '<li>' . $info . '</li>';
+						}
+				} echo '<br/><br/>';
+			}
 
+			nickname_generate();
+			object_generate();
 		?>
 
 

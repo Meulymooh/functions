@@ -46,7 +46,9 @@
 		<div class="row">
 
 			<div class="col col-md-2">
-				<button type="button" class="btn btn-primary" id="button1">Generate</button>
+				<form action="" method="post">
+					<button type="submit" method="post" name="info" class="btn btn-primary" id="button1">Generate</button>
+				</form>
 			</div>
 
 			<div class="col col-md-2">
@@ -55,7 +57,7 @@
 
 			<div class="col col-md-4">
 				<form action="" method="post">
-					 <button type="submit" name="name" id="enterNickname" class="btn btn-primary" id="button3"/>Nickname</button><input type="text" name="name">
+					 <button type="submit" name="nickname" id="enterNickname" class="btn btn-primary" id="button3"/>Nickname</button><input type="text" name="name">
 				</form>
 
 			</div>
