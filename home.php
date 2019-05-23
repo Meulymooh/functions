@@ -1,5 +1,3 @@
-<html>
-
 <!DOCTYPE html>
 
 	<html lang="en">
@@ -68,13 +66,10 @@
 
 		<div class="row">
 
-			<div class="require">
-				<?php require 'security.php';?>
-			</div>
-
-			<div class="include">
-				<?php include 'functions.php';?>
-			</div>
+			<?php 
+    			include "functions.php";
+    			require "security.php";
+			?>
 
 		</div>
 

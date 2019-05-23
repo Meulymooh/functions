@@ -60,14 +60,22 @@ p {
 	width: 100%;
 }
 
-.col {
-	text-align: center;
-}
-
 #button1 #button2 #button3 {
 	margin: 5px;
 }
 
 #enterNickname {
 	margin-left : 10px;
+}
+
+#button4 {
+	margin-top: 20px;
+}
+
+.gif {
+	margin-bottom: 20px;
+}
+
+.radioButton {
+	margin-top: 20px;
 }

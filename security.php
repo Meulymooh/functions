@@ -1,5 +1,3 @@
-<html>
-
 <!DOCTYPE html>
 
 	<html lang="en">
@@ -43,12 +41,40 @@
 
 	<div class="wrapper">
 
-		
+		<div class="wrapper-instruction">
+			<h4>Are you a bot from the future coming to exterminate the human race and you just want a cool nickname?</h4>
+		</div>
 
-	</div>
+		<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+
+			<div class="row">
+
+				<div class="col col-md-6 text-center">
+					<input class="gif" type="image" src="img/yes.gif"><br/>
+					<input type="radio" name="login" value="yes" class="radioButton">	
+				</div>
+
+				<div class="col col-md-6 text-center">
+					<input class="gif" type="image" src="img/no.gif"><br/>
+					<input type="radio" name="login" value="no" class="radioButton">
+				</div>
+
+		</div>
+
+		<div class="row text-center">
+
+			<button type="submit" name="info" class="btn btn-primary" id="button4">Submit</button>
+
+		</div>
+
+	</form>
+
+            </div>
+
 
 	
 </div>
+
 
 
 </body>
