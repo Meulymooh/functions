@@ -1,0 +1,73 @@
+/* General styling */
+
+body {
+background-color: #e6e6e6;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+	font-family: 'Roboto', sans-serif;	
+}
+
+h3 {
+	font-family: 'Roboto', sans-serif;	
+}
+
+h4 {
+	font-family: 'Roboto', sans-serif;	
+	margin-right: 10px;
+}
+
+p {
+	margin-right: 10px;
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+.container-fluid {
+	width: 100%;
+	align-content: center;
+	margin: auto;
+}
+
+.wrapper {
+	border: 1px solid grey;
+	width: 90%;
+	padding: 20px;
+	margin-left: 20px;
+	margin-top: 10px;
+	background-color: white;
+}
+
+.wrapper-title {
+	width: 100%;
+	padding: 20px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.wrapper-instruction {
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.row {
+	width: 100%;
+}
+
+.col {
+	text-align: center;
+}
+
+#button1 #button2 #button3 {
+	margin: 5px;
+}
+
+#enterNickname {
+	margin-right : 10px;
+}
