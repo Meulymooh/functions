@@ -81,24 +81,55 @@
   					}
 			}
 
-			function object_generate(){
+			function object_generate() {
 				if (isset($_POST["info"])) {
-					$str2 = new stdClass();
-						$str2->firsName = '<b>First name:</b> Emilie';
-						$str2->lastName = '<b>Last name:</b> Mesureur';
-						$str2->nickname = '<b>Nickname:</b> Milou';
-						$str2->age = "<b>Age:</b> 39";
-						$str2->location = '<b>Location:</b> Ghent, Belgium';
-						$str2->occupation = '<b>Occupation:</b> Junior web developer in the making';
-						echo '<b>Function "object_generate"</b>:<br/>';
-						foreach ($str2 as $info) {
-							echo '<li>' . $info . '</li>';
-						}
-				} echo '<br/><br/>';
+					echo '<b>Function "object_generate"</b>:<br/>';
+					wildAnimals();
+				}
 			}
+
+			function pets() {
+				// Simple array
+				$pets = array("cat", "dog", "ferret", "rabbit", "hamster", "goldfish", "turtle", "rat");
+				foreach ($pets as $pet) {
+					echo '<li>' . $pet . '</li>';
+				 }
+			}
+
+			function farmAnimals() {
+				// Associative array
+				$farmAnimals = array("oink" => "pig", "mooh" => "cow", "quack" => "duck", "gobble" => "turkey", "cock-a-doodle-doo" => "chicken", "baa" => "sheep");
+				// Render associative array
+				foreach ($farmAnimals as $animalSound => $farmAnimal){  
+    				echo '<li>' . $farmAnimal . '</li>';
+				}
+			}
+
+			function wildAnimals() {
+				// Object
+				$wildAnimals = new stdClass();
+					$wildAnimals->reptile = "rattlesnake";
+    				$wildAnimals->mammal = "tiger";
+    				$wildAnimals->bird = "eagle";
+    				$wildAnimals->fish = "shark";
+    			foreach ($wildAnimals as $wildAnimal) {
+					echo '<li>' . $wildAnimal . '</li>';
+				 }
+			}
+
+			function object_revert() {
+				if (isset($_POST["revert"])) {
+					echo '<b>Function "object_revert"</b>:<br/>';
+					wildAnimals();
+					pets();
+					farmAnimals();
+				}
+			}
+
 
 			nickname_generate();
 			object_generate();
+			object_revert();
 		?>
 
 

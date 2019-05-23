@@ -47,17 +47,19 @@
 
 			<div class="col col-md-2">
 				<form action="" method="post">
-					<button type="submit" method="post" name="info" class="btn btn-primary" id="button1">Generate</button>
+					<button type="submit" name="info" class="btn btn-primary" id="button1">Generate</button>
 				</form>
 			</div>
 
 			<div class="col col-md-2">
-				<button type="button" class="btn btn-primary" id="button2">Revert</button>
+				<form action="" method="post">
+					<button type="submit" name="revert" class="btn btn-primary" id="button2">Revert</button>
+				</form>
 			</div>
 
 			<div class="col col-md-4">
 				<form action="" method="post">
-					 <button type="submit" name="nickname" id="enterNickname" class="btn btn-primary" id="button3"/>Nickname</button><input type="text" name="name">
+					 <button type="submit" name="nickname" class="btn btn-primary" id="button3"/>Nickname</button><input type="text" name="name" id="enterNickname">
 				</form>
 
 			</div>
